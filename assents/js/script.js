@@ -1,27 +1,25 @@
-let email = 'belmirokunga@*****.com';
-
-email = 'belmirokunga@######.com';
-
+let email = 'belmiro@gmail.com';
+email = 'kunga@gmail.com'; 
 console.log(email);
-console.log('Your email is: ' + email);
-console.log(`Your email is: ${email}`);
+console.log('O seu e-mail é: ' + email);
+console.log(`O seu e-mail é: ${email}`);
 
 
 document.getElementById('btn-submit').addEventListener('click', e => {
 
-    console.log('The button was clicked!');
+    console.log('O botão foi clicado!');
 
 });
 
 document.getElementById('form-login').addEventListener('mouseenter', e => {
 
-    console.log('The mouse is on the form.');
+    console.log('O mouse está sobre o formulário.');
 
 });
 
 document.querySelector('#form-login').addEventListener('mouseleave', e=> {
 
-    console.log('The mouse is outside the form.');
+    console.log('O mouse está fora do formulário.');
 
 });
 
@@ -39,25 +37,19 @@ document.querySelector('#form-login').addEventListener('submit', e=>{
 
     if (!json.email) {
 
-        console.error("The e-mail field must be filled in!");
+        console.error("O campo e-mail deve ser preenchido!");
 
     } else if (!json.password) {
 
-        console.error("The password field must be filled in!");
+        console.error("O campo password deve ser preenchido!");
 
     } else {
 
-        console.info("Data validated successfully!");
+        console.info("Dados validados com sucesso!");
 
     }
 
 });
-
-
-
-
-
-
 
 
 
